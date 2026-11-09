@@ -2,5 +2,12 @@
 name = "cardscut"
 version = "0.1.0"
 edition = "2024"
+# license = "AGPL-3.0-or-later"
+license = "AGPL-3.0-only"  # pdf-manip forces "-only"
 
 [dependencies]
+easy-error = "1.0.0"
+# lopdf = "0.47.0"
+pdfluent-lopdf = "0.39.8"
+pdf-manip = { version = "1", default-features = false, features = [] }
+xflags = "0.3.2"
